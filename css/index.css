@@ -7,8 +7,9 @@
 }
 
 body {
+  background-color: #000000; /* Or any base dark background */
   font-family: 'Inter', sans-serif;
-  background-color: #000; /* Optional, for full-page preview */
+  margin: 0;
 }
 
 .header {
@@ -45,6 +46,69 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
+}
+
+.hero {
+  width: 1440px;
+  height: 750px;
+  margin: 0 auto;
+  padding: 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  /* background: linear-gradient(90deg, #000000 0%, #210a5e 30%); */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 10, 94, 0.3) 100%
+  );
+  color: white;
+  border-radius: 0; /* In case a global style affected this */
+}
+
+.hero-image img {
+  width: 100%;
+  /* max-width: 400px; */
+  height: auto;
+  /* object-fit: contain; */
+  /* display: block; */
+}
+
+.hero-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text h1 em {
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #5e3bee;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  width: fit-content;
 }
 
 .who-we-are {
@@ -231,4 +295,91 @@ body {
 .team-member .role {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-section {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 80px 140px 120px 140px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-btn {
+  background-color: #5e3bee;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 24px;
+}
+.footer {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 24px 8px;
+  border-top: 1px solid #181d27;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
 }
