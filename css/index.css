@@ -46,3 +46,31 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
+
+.who-we-are {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 80px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  color: white;
+}
+
+.who-we-are h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.who-we-are p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 1000px; /* Optional: keeps text from stretching too far */
+  color: rgba(255, 255, 255, 0.75); /* Slightly dimmed white for contrast */
+}
+
+.who-we-are p strong {
+  color: white; /* Makes bold parts brighter */
+}
