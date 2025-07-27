@@ -1,1 +1,48 @@
 /* code here */
+/* Reset for box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000; /* Optional, for full-page preview */
+}
+
+.header {
+  width: 1440px;
+  height: 84px;
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
+  backdrop-filter: blur(40px);
+  position: relative; /* if needed for z-index */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.contact-btn {
+  background-color: #5e3bee; /* purple button */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
